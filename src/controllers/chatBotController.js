@@ -232,7 +232,7 @@ let callSendAPIWithTemplate = (sender_psid) => {
     };
 
     request({
-        "uri": "https://graph.facebook.com/v6.0/me/messages",
+        "uri": "https://graph.facebook.com/v7.0/me/messages",
         "qs": { "access_token": process.env.FB_PAGE_TOKEN },
         "method": "POST",
         "json": body
