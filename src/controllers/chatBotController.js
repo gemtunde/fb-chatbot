@@ -167,7 +167,7 @@ function handleMessage(sender_psid, message) {
     // id like button: sticker_id 369239263222822
 
     if( message && message.attachments && message.attachments[0].payload){
-        callSendAPI(sender_psid, "Thank you for watching my video !!!");
+        callSendAPI(sender_psid, "Thank you for watching our video !!!");
         callSendAPIWithTemplate(sender_psid);
         return;
     }
@@ -187,7 +187,7 @@ function handleMessage(sender_psid, message) {
     }else{
        if(entityChosen === "wit$greetings"){
            //send greetings message
-           callSendAPI(sender_psid,'Hi there! This bot is created by Hary Pham. Watch more videos on HaryPhamDev Channel!');
+           callSendAPI(sender_psid,'Hi there! This bot is created for Winners ICT-Group. Watch more videos on DomiStream Channel!');
        }
        if(entityChosen === "wit$thanks"){
            //send thanks message
@@ -214,13 +214,13 @@ let callSendAPIWithTemplate = (sender_psid) => {
                     "template_type": "generic",
                     "elements": [
                         {
-                            "title": "Want to build sth awesome?",
-                            "image_url": "https://www.nexmo.com/wp-content/uploads/2018/10/build-bot-messages-api-768x384.png",
-                            "subtitle": "Watch more videos on my youtube channel ^^",
+                            "title": "Living Faith Church Worldwide",
+                            "image_url": "https://faithtabernacle.org.ng/vendor/images/section-bg-101.jpg",
+                            "subtitle": "Watch more videos on our youtube channel ^^",
                             "buttons": [
                                 {
                                     "type": "web_url",
-                                    "url": "https://bit.ly/subscribe-haryphamdev",
+                                    "url": "https://www.youtube.com/c/DomiStream",
                                     "title": "Watch now"
                                 }
                             ]
